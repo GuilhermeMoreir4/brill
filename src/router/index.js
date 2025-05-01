@@ -6,7 +6,7 @@ import ReportBug from '../components/ReportBug.vue'
 import Download from '../components/Download.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/brill/'),
   routes: [
     {
       path: '/',

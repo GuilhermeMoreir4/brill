@@ -1,7 +1,7 @@
 <template>
     <nav>
       <router-link to="/">
-        <img id="logo" src="@/assets/logo.png" alt="Brill Logo">
+        <img id="logo" src="@/assets/app_logo.png" alt="Brill Logo">
       </router-link>
   
       <ul>
@@ -17,11 +17,12 @@
   // Component logic here
   </script>
   
-  <style>
+  <style scoped>
     nav{
       display: flex;
       justify-content: space-between;
       max-height: 10rem;
+      padding-top: 30px;
       padding-left: 20vh;
       padding-right: 20vh;
     }
@@ -42,7 +43,7 @@
     }
   
     #logo{
-      width:100px;
+      width:50px;
     }
   
     .router-link-active {
