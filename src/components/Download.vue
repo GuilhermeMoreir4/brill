@@ -27,7 +27,6 @@
 <style scoped>
 #download {
   min-height: 80vh;
-
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -49,44 +48,52 @@
 }
 
 #content {
-  padding: 10vh 20vh;
+  padding: 2rem;
   color: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .download-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .platform {
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .platform h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .download-button {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1.5rem;
   margin: 1rem 0;
   background: white;
   color: blueviolet;
   border: none;
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -99,5 +106,31 @@ h1 {
 .platform p {
   color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  #content {
+    padding: 10vh 20vh;
+  }
+
+  .download-options {
+    gap: 2rem;
+  }
+
+  .platform {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    padding: 1rem;
+  }
+
+  .download-options {
+    grid-template-columns: 1fr;
+  }
 }
 </style> 

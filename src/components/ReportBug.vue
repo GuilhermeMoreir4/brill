@@ -41,9 +41,9 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #background {
@@ -62,22 +62,25 @@
 }
 
 #content {
-  padding: 10vh 20vh;
+  padding: 2rem;
   color: white;
+  width: 100%;
+  max-width: 1200px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bug-form {
   max-width: 800px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  margin: 0 auto;
 }
 
 .form-group {
@@ -87,17 +90,17 @@ h1 {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 input, textarea, select {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.75rem;
   border-radius: 5px;
   border: none;
   background: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
 }
 
 textarea {
@@ -107,12 +110,12 @@ textarea {
 
 .submit-button {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1.5rem;
   background: white;
   color: blueviolet;
   border: none;
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -120,5 +123,25 @@ textarea {
 
 .submit-button:hover {
   transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  #content {
+    padding: 10vh 20vh;
+  }
+
+  .bug-form {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    padding: 1rem;
+  }
+
+  .bug-form {
+    padding: 1rem;
+  }
 }
 </style> 

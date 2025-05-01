@@ -15,7 +15,6 @@
 <style scoped>
 #contact {
   min-height: 80vh;
-
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -37,22 +36,43 @@
 }
 
 #content {
-  padding: 20vh;
+  padding: 2rem;
   color: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info {
-  font-size: 1.5rem;
-  line-height: 2;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.6;
 }
 
 .contact-info p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #content {
+    padding: 20vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #content {
+    padding: 1rem;
+  }
+
+  .contact-info {
+    line-height: 1.4;
+  }
 }
 </style> 
