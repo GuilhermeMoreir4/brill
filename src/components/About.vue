@@ -14,8 +14,7 @@
 
 <style scoped>
 #about {
-  min-height: 80vh;
-
+  max-height: 80vh;
   width: 100%;
   position: relative;
   overflow: hidden;
