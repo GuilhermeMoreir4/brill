@@ -1,12 +1,13 @@
 <template>
     <nav>
-      <img id = "logo" src = "@/assets/logo.png" alt = "Brill Logo">
+      <router-link to="/">
+        <img id="logo" src="@/assets/logo.png" alt="Brill Logo">
+      </router-link>
   
       <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href = "#">Report a bug</a></li> 
+          <li><router-link to="/contact">Contact</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/download">Download</router-link></li> 
         </ul>
     </nav>
     <header></header>
@@ -42,6 +43,11 @@
   
     #logo{
       width:100px;
+    }
+  
+    .router-link-active {
+      font-weight: bold;
+      text-decoration: underline;
     }
   </style>
   
