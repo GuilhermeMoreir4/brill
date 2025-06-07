@@ -4,6 +4,7 @@ import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
 import ReportBug from '../components/ReportBug.vue'
 import Download from '../components/Download.vue'
+import Chatbot from '../components/Chatbot.vue'
 
 const router = createRouter({
   history: createWebHistory('/brill/'),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/download',
       name: 'Download',
       component: Download
+    },
+    {
+      path: '/chatbot',
+      name: 'Chatbot',
+      component: Chatbot
     }
   ]
 })

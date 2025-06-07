@@ -13,7 +13,8 @@
       <ul :class="{ 'mobile-menu': true, 'active': isMenuOpen }">
           <li><router-link to="/contact" @click="closeMenu">Contact</router-link></li>
           <li><router-link to="/about" @click="closeMenu">About</router-link></li>
-          <li><router-link to="/report-bug" @click="closeMenu">Report a Bug</router-link></li> 
+          <li><router-link to="/report-bug" @click="closeMenu">Report a Bug</router-link></li>
+          <li><router-link to="/chatbot" @click="closeMenu">Ask Assistant</router-link></li>
         </ul>
     </nav>
     <header></header>
@@ -54,6 +55,8 @@
       text-decoration: none;
       color: white;
       -webkit-tap-highlight-color: transparent;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
   
     li{
@@ -67,7 +70,7 @@
     }
   
     .router-link-active {
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: underline;
     }
   
@@ -123,6 +126,7 @@
         padding: 1rem;
         font-size: 1.2rem;
         width: 100%;
+        font-weight: 500;
       }
     }
   

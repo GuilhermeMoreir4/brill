@@ -72,6 +72,8 @@ h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .bug-form {
@@ -92,6 +94,8 @@ label {
   margin-bottom: 0.5rem;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 input, textarea, select {
@@ -101,6 +105,8 @@ input, textarea, select {
   border: none;
   background: rgba(255, 255, 255, 0.9);
   font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 textarea {
@@ -116,7 +122,8 @@ textarea {
   border: none;
   border-radius: 20px;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }

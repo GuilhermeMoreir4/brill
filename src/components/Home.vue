@@ -60,6 +60,8 @@
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 #title p {
@@ -67,6 +69,8 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: clamp(1rem, 2vw, 1.5rem);
   margin: 0.5rem 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 #call-to-action {
@@ -80,6 +84,8 @@
   color: white;
   font-size: clamp(1rem, 2vw, 1.25rem);
   margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 #call-to-action button {
@@ -89,7 +95,8 @@
   color: blueviolet;
   background-color: white;
   border: none;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   transition: transform 0.2s ease;
   width: fit-content;
 }

@@ -48,11 +48,15 @@ h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .contact-info {
   font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .contact-info p {
